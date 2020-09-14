@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include"math.h"
+
+using namespace std;
+int main()
+{
+	double suma=0;
+	int n;
+		cout<<"Ingrese el valor que desea calcular: ";
+		cin>>n;
+	for(int i=1; i<=n; i++){
+		if(i%2==0) 
+		{
+			suma = suma + i;
+		}
+		else{
+		suma = suma + i;
+		}
+
+	cout<<"La suma es de : "<<n<< "es: "<<suma<<endl;
+
+	system("pause");
+
+	return 0;
+
+}
