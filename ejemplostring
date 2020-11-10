@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+
+
+using namespace std;
+
+void main()
+{
+
+	string nombrecompleto;
+	int longitud,espacio,nombre,apellido;
+
+	cout<<"Ingrese el nombre: " <<endl;
+	getline(cin,nombrecompleto); 
+	cout<<"Hola" <<nombrecompleto;
+	espacio=nombrecompleto.find(' ');
+	cout<<nombrecompleto.substr(0,espacio);
+	cout<<nombrecompleto.substr(espacio,longitud-espacio);
+	cout<<apellido;
+	nombrecompleto=apellido+' '+nombre;
+	cout<<nombrecompleto;
+	cout<<nombrecompleto;
+
+
+	getch();
+}
