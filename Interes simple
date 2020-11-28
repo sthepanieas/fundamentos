@@ -1,0 +1,22 @@
+//Defines the entry point for the console application.
+//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float T,n,C,I;
+    cout << "Vamos a calcular su interes simple y que no es capitalizable, para esto necesitamos los siguientes datos:" << endl;
+    cout<<" Ingrese el monto del capital" << endl;
+    cin >> C;
+    cout<<" Ingrese el tiempo en meses" << endl;
+    cin >> n;
+    cout << "ingrese el porcentaje de interes (solo el numero, ej: 2,9)" << endl;
+    cin >> T;
+    
+    I=C*n*T;
+    cout << "Su interes mensual siemple es:" << endl;
+    cout << I << endl;
+
+    return 0;
+}
