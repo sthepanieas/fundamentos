@@ -1,0 +1,31 @@
+// .cpp : Defines the entry point for the console application.
+//
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+
+{
+    float A1,B1,C1,A2,B2,C2,X,Y;
+    cout << "Solucion de un sistema de ecuaciones de primer grado, a continuacion ingrese los coeficientes de las dos ecuaciones:" << endl;
+    cout << "Digite los coeficientes de A1,B1 y C1 ,respectivamente:" << endl;
+    cin >> A1;
+    cin >> B1;
+    cin >> C1;
+    cout << "Ahora digite los coeficientes de la segunda ecuacion, de la misma manera:" << endl;
+    cin >> A2;
+    cin >> B2;
+    cin >> C2;
+    
+    X= ((B2*C1)-(B1*C2))/((A1*B2)-(B1*A2));
+    Y= ((A1*C2)-(A2*C1))/((A1*B2)-(B1*A2));
+    
+    
+    cout << "Ya que es un sistema de ecuaciones de primer grado solo tendra una solucion (x,y) y es la siguiente:" << endl;
+    cout << "Para x vale:" << X << endl;
+    cout << "Para y vale:" << Y << endl;
+    
+    return 0;
+}
