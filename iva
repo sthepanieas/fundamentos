@@ -1,0 +1,33 @@
+//Defines the entry point for the console application.
+//
+
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    string nombre;
+    int h,p,t, total ;
+    
+    cout << "Ingrese su nombre completo" << endl;
+    cin >> nombre;
+    cout << "ingrese las horas trabajadas al mes" << endl;
+    cin >> h;
+    cout << "ingrese el precio por las horas trabajadas" << endl;
+    cin >> p;
+    
+    t=h*p;
+    total=t+(t*0.13);
+    
+    if (t>=8272) {
+        cout << "Debe pagar impuestos, el monto total es:" << endl;
+        cout << total << endl;
+    }
+    else 
+    {
+        cout << "No paga impuestos, su total a pagar es de:" << endl;
+        cout << t << endl;
+    }
+    
+    return 0;
+}
