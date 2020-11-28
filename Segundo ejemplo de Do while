@@ -1,0 +1,41 @@
+//do while.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+int main()
+{
+   int a, b, r, opcion;
+   cout << "Ingrese a: " ;
+   cin >> a;
+   cout << "Ingrese b: " ;
+   cin >> b;
+   cout << endl;
+   do{
+   cout << "1.- Suma" << endl;
+   cout << "2.- Resta" << endl;
+   cout << "3.- Producto" << endl;
+   cout << "4.- Division" << endl;
+   cout << "0.- Salir" << endl;
+   cout << "Elige una opcion: " ;
+   cin >> opcion;
+   switch (opcion) {
+	    case 1: r = a + b; break;
+	    case 2: r = a - b; break;
+	    case 3: r = a * b; break;
+	    case 4: r = a / b; break;
+		case 0: cout << "Salir";break;
+	    default: cout << "Opcion invalida" << endl;
+   }
+   cout << "El resultado es " << r << endl;
+   getch();
+   system("cls");
+   } while (opcion!=0);
+
+  
+   return 0;
+}
