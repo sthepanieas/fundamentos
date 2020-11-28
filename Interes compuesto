@@ -1,0 +1,25 @@
+//Defines the entry point for the console application.
+//
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+
+{
+    float C,n,T,IC;
+    cout << "Vamos a calcular su interes compuesto,necesitamos los siguientes datos:" << endl;
+    cout<<" Ingrese el monto de la inversion" << endl;
+    cin >> C;
+    cout<<" Ingrese la cantidad de años" << endl;
+    cin >> n;
+    cout << "ingrese la tasa de interes (solo el numero)" << endl;
+    cin >> T;
+    
+    IC= C*(pow((1+T),n));
+   
+    cout << "Su interes compuesto es:" << endl;
+    cout << IC << endl;
+
+    return 0;
+}
