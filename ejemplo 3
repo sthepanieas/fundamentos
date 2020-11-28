@@ -1,0 +1,26 @@
+// Defines the entry point for the console application.
+//
+
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int n1, n2,  n3, ep , ef, pf , nf;
+    cout << "Ingrese sus tres notas de sus tres examenes respectivamente " << endl;
+    cout << "nota 1:" << endl;
+    cin >> n1;
+    cout << "nota 2:" << endl;
+    cin >> n2;
+    cout << "nota 3:" << endl;
+    cin >> n3;
+    ep=(n1+n2+n3)/3;
+    cout << "ingrese la nota de su examen final " << endl;
+    cin >> ef;
+    cout << "ingrese la nota de su proyecto final " << endl;
+    cin >> pf;
+    nf= (ep*40/100) + (ef*40/100) + (pf*20/100) ;
+    cout << "su nota final es:" << endl << nf ;
+
+    return 0;
+}
