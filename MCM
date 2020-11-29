@@ -1,0 +1,27 @@
+#include <iostream> 
+#include "math.h"
+using namespace std;
+
+int main(){
+
+	int a,b,r=1;
+	cout<<"ingrese A: ";cin>>a;
+	cout<<"ingrese B: ";cin>>b;
+	int dividendo,divisor;
+
+	if(a>b)
+	{dividendo=a;divisor=b;}
+	else{dividendo=b;divisor=a;}
+
+	while(r!=0)
+	{
+		r=dividendo%divisor;
+		dividendo=divisor;
+		divisor=r;
+	}
+
+int MCM=(a*b)/dividendo;
+cout<<"El minimo comun multiplo es: "<<MCM<<endl;
+return 0;
+
+}
