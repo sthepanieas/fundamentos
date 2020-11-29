@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+float areacirculo (float radio);        
+int main()
+{
+    
+    float r,h;
+    char opc; 
+    cout<<"Ingrese el radio: ";
+    cin>> r;
+    h=areacirculo (r);
+     cout<<"El area de la circunferencia es: " <<h<<endl;
+  return 0;
+  
+}
+
+    float areacirculo (float radio){
+    float area,PI=3.141516;
+        area = PI*(radio*radio);
+        return area;
+        
+    }
