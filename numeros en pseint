@@ -1,0 +1,18 @@
+Algoritmo ab
+	Definir a,b,c,d,e,f,g como entero; 
+	Escribir "ingrese los dos numeros"
+	Escribir "Primer numero"
+	Leer a;
+	Escribir "Segundo numero"
+	Leer b;
+	c<-a+b;
+	d<-a-b
+	e<-a*b
+	g<-a/b
+	f<-a%b
+	Escribir "La suma es:" ,c;
+	Escribir "La resta es:" ,d;
+	Escribir "La multiplicacion es:",e;
+	Escribir "La divison es:" ,g;
+	Escribir "El modulo o residuo es:" ,f;
+FinAlgoritmo
