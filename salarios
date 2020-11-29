@@ -1,0 +1,19 @@
+#include <iostream>
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int s,d,j;
+    cout<<"ingrese la cantidad de dias" << endl;
+    cin>> d;
+    cout << "ingrese el monto del jornal" << endl;
+    cin >> j;
+    s=d*j;
+    cout << "El salario es:" << endl;
+    cout << s ; 
+
+    return 0;
+}
