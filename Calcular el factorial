@@ -1,0 +1,22 @@
+#include <iostream> 
+#include "math.h"
+using namespace std;
+
+int main(){
+
+	int n;
+	float f=1;
+	cout<<"Ingrese N: "<<endl;
+	cin>>n;
+
+	if(n==0)
+	{f=1;}
+	for(int i=1;i<=n;i++)
+	{
+		f=f*i;
+	}
+
+	cout<<"El factorial es: "<<f<<endl;
+return 0;
+
+}
