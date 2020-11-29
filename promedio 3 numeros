@@ -1,0 +1,32 @@
+#include "stdafx.h"  
+#include "conio.h"
+#include <iostream> 
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;  //Declaramos las variables
+    float p;
+    cout<<"Ingrese el primer valor: ";
+    cin>>a;
+    cout<<"Ingrese el segundo valor: ";
+    cin>>b;
+    cout<<"Ingrese el tercer valor: ";
+    cin>>c;
+    if ((a>=0)&&(a<=10)) //&& es el y
+        if ((b>=0)&&(b<=10))
+            if ((c>=0)&&(c<=10))
+            {
+                p=(a+b+c)/3.0;  // Se coloca 3.0 para que no lo tome como división de enteros
+                cout<<"El promedio es: "<<p;
+            }
+            else
+                cout<<"Error en: "<<c;
+        else
+           cout<<"Error en: "<<b;
+    else
+       cout<<"Error en: "<<a;
+
+    return 0;
+    }
