@@ -1,0 +1,39 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+// prototipos de funciones
+int PedirCuadrado();
+int al_cuadrado (int x);
+
+int n;
+int main(){
+    PedirCuadrado();
+    al_cuadrado(n);
+
+}
+int PedirCuadrado(){
+    cout << "Digite 1 numero : ";
+    cin >> n;
+    return 0;
+}
+int al_cuadrado (int x)
+
+{
+    int d,c=0;
+    cout << x << endl;
+        while (x>0)
+    {
+        d=x%10;
+    
+        x=x/10;
+        
+        if (d%2==0)
+        {
+        c++;
+            cout << "los pares son :" << d << endl;
+        }
+    }
+    cout<<"La cantidad de digitos pares es: "<<c<<endl;
+    return 0;
+}
