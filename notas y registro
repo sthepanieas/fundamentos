@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+
+using namespace std;
+#define N 20
+ 
+void cargar (int A[],int B[] );
+void mostrar (int A[], int B[]  );
+
+void ordenardec(int A[], int B[]  );
+
+void main()
+  
+{int Registro[N], Nota[N];
+cargar(Nota, Registro);
+ordenardec(Nota, Registro);
+mostrar(Nota, Registro);
+
+
+getch();
+}
+
+
+ void cargar (int A[], int B[] )
+{cout<<"Ingrese las Notas y Registro de  "<< N<<" alumnos al vector"<<endl;
+ for(int k=0;k<N;k++)
+	{do {cout<<"Nota ["<<k+1<<"]="; 
+		cin>>A[k];
+		if(A[k]<0 || A[k]>100)
+			{cout<<"Nota errone"<<endl;}
+		 }while(A[k]<0 || A[k]>100);
+	
+	cout<<"Registro["<<k+1<<"]=";
+	cin>>B[k];
+	}
+ 
+}
+ void mostrar (int A[], int B[]  )
+{
+  for(int k=0;k<3;k++)
+	{cout<<"El "<<k+1<<"er lugar tiene de Nota ="; 
+	cout<<A[k]<<"  ";
+	cout<<" y su numero de Registro es =";
+	cout<<B[k]<<endl;
+	}
+}
