@@ -1,0 +1,22 @@
+#include <iostream> 
+#include "math.h"
+using namespace std;
+int main()
+{
+
+int n;
+cout<<"ingrese el valor de n: "; 
+cin>>n;
+
+int a=1,b=0,c=0;
+
+for(int i=1;i<=n;i++)
+{
+c=a+b;
+a=b;
+b=c;
+}
+cout<<"El N-simo numero de fibonacci es: "<<c<<endl;
+return 0;
+
+}
