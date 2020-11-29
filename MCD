@@ -1,0 +1,30 @@
+#include <iostream> 
+#include "math.h"
+using namespace std;
+
+
+int main(){
+
+	int a,b,r=1;
+	cout<<"ingrese el valor de A: ";
+  cin>>a;
+	cout<<"ingrese el valor de B: ";
+  cin>>b;
+	int dividendo,divisor;
+
+	if(a>b)
+	{dividendo=a;divisor=b;}
+	else{dividendo=b;divisor=a;}
+
+	while(r!=0)
+	{
+		r=dividendo%divisor;
+		dividendo=divisor;
+		divisor=r;
+	}
+
+
+	cout<<"El MCD es: "<<dividendo<<endl;
+return 0;
+
+}
